@@ -3,6 +3,7 @@ import './App.css';
 
 import NavBar from './components/NavBar/NavBar'
 import Box from './components/Box'
+import ItemListContainer from './components/Box/ItemListContainer'
 import Button from './components/Button'
 
 function App() {
@@ -13,9 +14,7 @@ function App() {
       {/* <Button texto='Button 1' color='red' />
       <Button texto='Button 2' color='blue' />
       <Button /> */}
-      <Box titulo='Caja contenedora'>
-        <p>esto es un children</p>
-      </Box>
+      <ItemListContainer greeting='Item List Container'/>
     </div>
   );
 }
