@@ -25,13 +25,11 @@ function ItemCountButton({productStock, initial, onAdd}) {
     <div>
         <div className="input-group mb-3">
         <div className="input-group-prepend">
-            {/* <span className="input-group-text">-</span> */}
             <button type="button" onClick={() => handleMinCount()} className="btn btn-secondary">-</button>
         </div>
         <input type="text" className="form-control input-center" aria-label="Cantidad" value={count} readOnly />
         <div className="input-group-append">
             <button type="button" onClick={() => handlePlusCount()} className="btn btn-secondary">+</button>
-            {/* <span className="input-group-text">+</span> */}
         </div>
         </div>
 
