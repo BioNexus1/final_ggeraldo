@@ -7,9 +7,9 @@ function ItemListContainer({greeting}) {
   function getProducts() {
     const myPromise = new Promise((resolve, reject) => {
       const products = [
-        { id: 1, name: 'polera CK', description: 'Polera cuello V', price: 1000, stock: 3 },
-        { id: 2, name: 'bufanda', description: 'Bufando a cuadros', price: 2000, stock: 7 },
-        { id: 3, name: 'zapatillas', description: 'Adidas Air Sport',  price: 3000, stock: 2 },
+        { id: 1, productName: 'Polera', productDescription: 'Polera cuello V', price: 1000, productStock: 3 },
+        { id: 2, productName: 'Bufanda', productDescription: 'Bufando a cuadros', price: 2000, productStock: 7 },
+        { id: 3, productName: 'Zapatillas', productDescription: 'Adidas Air Sport',  price: 3000, productStock: 2 },
         
       ];
       setTimeout(() => {
