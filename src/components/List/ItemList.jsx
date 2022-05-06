@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Item from './Item';
+import Item from '../Object/Item';
 import './../../styles/Box/ItemList.css';
 
 function ItemList({items}) {

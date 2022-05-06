@@ -10,12 +10,13 @@ function App() {
   return (
     <div className="App">
       <NavBar/>
-      <Router>
+      {/* <Router> */}
         <Routes>
           <Route path='/' element={<ItemListContainer/>} />
+          <Route path='/category/:categoryId' element={<ItemListContainer/>} />
           <Route path='/item/:id' element={<ItemLDetailContainer/>} />
         </Routes>
-      </Router>
+      {/* </Router> */}
       {/* <Button texto='Button 1' color='red' />
       <Button texto='Button 2' color='blue' />
       <Button /> */}
