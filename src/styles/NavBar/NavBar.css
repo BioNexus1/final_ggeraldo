@@ -31,3 +31,7 @@
     height: 80px;
     width: 150px;
 }
+
+.nav-active {
+    font-weight: bold;
+}
