@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './../../styles/Button/ItemCountButton.css';
+import { Button } from 'react-bootstrap';
 
 function ItemCountButton({productStock, initial, onAdd}) {
   const [count, setCount] = useState(initial);
@@ -32,6 +33,9 @@ function ItemCountButton({productStock, initial, onAdd}) {
             <button type="button" onClick={() => handlePlusCount()} className="btn btn-secondary">+</button>
         </div>
         </div>
+        <Button variant="primary" onClick={() => (count <= productStock) && onAdd(count)}>
+                Agregar al carrito
+        </Button>
 
     </div>
   )

@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Card, Button, CardGroup } from 'react-bootstrap';
 import './../../styles/Box/ItemDetail.css';
 import ItemCountButton from '../Button/ItemCountButton'
+import { Link } from 'react-router-dom';
 
 function ItemDetail({item}) {
   const initial = 1;
+  const [qtyProducts, setQtyProducts] = useState(null);
+  function addHandler(qtyProductsAdd){
+      setQtyProducts(qtyProductsAdd);
+  }
 
   return (
     <div>
@@ -26,8 +31,15 @@ function ItemDetail({item}) {
                         Stock: {item.productStock}
                     {/* </p> */}
                 </Card.Text>
-                <ItemCountButton productStock={item.productStock} initial={initial} />
-                <Button variant="primary">Agregar al carrito</Button>
+                {qtyProducts ? 
+                    <Button variant="primary">
+                        <Link to='/cart' id='cartLink'>
+                            Agregando {qtyProducts} productos al carrito
+                        </Link>
+                    </Button>
+                :
+                    <ItemCountButton productStock={item.productStock} initial={initial} onAdd={addHandler}/>
+                }
                 </Card.Body>
                 <Card.Footer>
                 <small className="text-muted">Last updated 3 mins ago</small>
