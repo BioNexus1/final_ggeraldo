@@ -5,3 +5,9 @@
     height: auto;
     text-align: center;
 }
+
+#cartLink{
+    text-decoration: none;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}

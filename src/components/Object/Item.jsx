@@ -22,7 +22,7 @@ function ItemCountContainer({item}) {
                     <Button variant="secondary">Ver Detalle</Button>
                   </Link>
                     <ItemCountButton productStock={item.productStock} initial={initial} />
-                    <Button variant="primary">Agregar al carrito</Button>
+                    
                 </Card.Body>
             </Card>
 
