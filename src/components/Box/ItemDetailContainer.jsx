@@ -11,7 +11,7 @@ function getProductsById(id) {
 
             const products = ProductList;
 
-            const item = products.filter(item => item.id === parseInt(id));
+            const item = products.find(item => item.id === parseInt(id));
             setTimeout(() => {
                 resolve(item[0]);
             }, 2000);

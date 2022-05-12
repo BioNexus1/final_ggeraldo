@@ -11,7 +11,8 @@ function ItemCountContainer({item}) {
     <div>
             <Card style={{ width: '18rem' }}>
               <Card.Header>{item.productName}</Card.Header>
-                <Card.Img variant="top" src="http://via.placeholder.com/640X460/00000/FFFFFF/?text=PRODUCTO TEST" />
+                <Card.Img variant="top" src={ item.urlImg }/>
+                {/* <Card.Img variant="top" src="http://via.placeholder.com/640X460/00000/FFFFFF/?text=PRODUCTO TEST" /> */}
                 {/* <Card.Img variant="top" src="holder.js/100px180?text=PRODUCTO TEST" /> */}
                 <Card.Body>
                     <Card.Title style={{ color:'red' }}>${item.price}</Card.Title>

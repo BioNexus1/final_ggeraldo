@@ -9,7 +9,7 @@ function getProducts(category) {
   const myPromise = new Promise((resolve, reject) => {
     const products = ProductList;
     const productsFiltered = category ? products.filter(product => product.category === category) : products;
-    // console.log(productsFiltered);
+    console.log(productsFiltered);
     setTimeout(() => {
       resolve(productsFiltered);
     }, 2000);
