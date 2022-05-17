@@ -7,6 +7,7 @@ const CartContext = createContext({
 export const CartContextProvider = ({ children }) => {
     const [productList, setProductList] = useState([]);
     
+    
     const addProduct = (product) => {
         const repeatedItemIndex = productList.findIndex(item => item.id === product.id)
         if (repeatedItemIndex !== -1) {
