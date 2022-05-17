@@ -16,7 +16,7 @@ function ItemCountButton({productStock, initial, onAdd}) {
     }
   }
   useEffect(() => {
-    console.log('ha dado click');
+    // console.log('ha dado click');
     // return () => {
     //   console.log('ha desmontado el contador');
     // }

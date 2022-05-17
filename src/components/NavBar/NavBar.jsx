@@ -20,16 +20,20 @@ function NavBar(props) {
             <div className="col-md-12">
             <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
             <Container fluid>
-                <Navbar.Brand href="#">
-                    
-                    <img
-                        src={logo}
-                        alt="Sample Brand Logo"
-                        width="35"
-                        className="align-top d-inline-block"
-                        height="35"
-                    />
-                    AltiroVoy
+
+                <Navbar.Brand href="/">
+                    <NavLink to='/'>
+
+                        <img
+                            src={logo}
+                            alt="Sample Brand Logo"
+                            width="35"
+                            className="align-top d-inline-block"
+                            height="35"
+                        />
+
+                        AltiroVoy
+                    </NavLink>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
@@ -38,7 +42,7 @@ function NavBar(props) {
                     style={{ maxHeight: '100px' }}
                     navbarScroll
                 >
-                    <Nav.Link href="#action1">Inicio</Nav.Link>
+                    <Nav.Link href="/">Inicio</Nav.Link>
                     <Nav.Link href="#action2">Nosotros</Nav.Link>
                     <NavDropdown title="Categorias" id="navbarScrollingDropdown">
                     <NavDropdown.Item>
